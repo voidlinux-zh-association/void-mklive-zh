@@ -1,7 +1,6 @@
-## The Void Linux image/live/rootfs maker and installer
+## Void Linux 安装镜像与 rootfs 生成器
 
-This repository contains utilities for Void Linux:
-
+此仓库包含了 Void Linux 的其他程序
  * installer (The Void Linux el-cheapo installer for x86)
  * mklive    (The Void Linux live image maker for x86)
 
@@ -10,16 +9,16 @@ This repository contains utilities for Void Linux:
  * mkrootfs  (The Void Linux rootfs maker for ARM platforms)
  * mknet (Script to generate netboot tarballs for Void)
 
-#### Build Dependencies
+#### 编译的依赖关系
  * make
 
-#### Dependencies
+#### 依赖
  * Compression type for the initramfs image
    * liblz4 (for lz4, xz) (default)
  * xbps>=0.45
  * qemu-user-static binaries (for mkrootfs)
 
-#### Usage
+#### 使用方法
 
 Type
 
@@ -31,7 +30,7 @@ and then see the usage output:
     $ ./mkrootfs.sh -h
     $ ./mkimage.sh -h
 
-#### Examples
+#### 例子
 
 Build a native live image keyboard set to 'fr':
 
