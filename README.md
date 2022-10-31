@@ -20,11 +20,11 @@
 
 #### 使用方法
 
-Type
+开始编译
 
     $ make
-
-and then see the usage output:
+ 
+然后输出实用方法:
 
     $ ./mklive.sh -h
     $ ./mkrootfs.sh -h
@@ -32,16 +32,20 @@ and then see the usage output:
 
 #### 例子
 
-Build a native live image keyboard set to 'fr':
+使用镜像源网站来构建镜像
+
+    # ./mklive.sh -r https://mirrors.bfsu.edu.cn/voidlinux/current 
+    
+将构建的镜像设置为法式键盘
 
     # ./mklive.sh -k fr
 
-Build an i686 (on x86\_64) live image with some additional packages:
+使用构建 i686（在 x86\_64 上）的镜像并添加一些软件包：
 
     # ./mklive.sh -a i686 -p 'vim rtorrent'
 
-Build an x86\_64 musl live image with packages stored in a local repository:
+使用存储在本地存储库中的包构建 x86\_64 musl 镜像：
 
     # ./mklive.sh -a x86_64-musl -r /path/to/host/binpkgs
 
-See the usage output for more information :-)
+有关详细信息，请参阅使用情况输出 :-)
